@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OnePicOneGuess</string>
+    <string-array name="listCategory">
+        <item>Animals</item>
+        <item>Fruits</item>
+        <item>Sports</item>
+    </string-array>
+    <string name="buttonSubmit">Submit</string>
+    <string name="buttonNext">Next</string>
+    <string name="hint">Enter your guess here</string>
+</resources>
