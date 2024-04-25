@@ -56,6 +56,12 @@ public class HiddenActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String guess = txtFinalWord.getText().toString();
+
+                if(guess.isEmpty()){
+                    Toast.makeText(HiddenActivity.this, "Please answer first", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 if (guess.equalsIgnoreCase(imageNames[currentImageIndex])) {
                     score++;
                     Toast.makeText(HiddenActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
