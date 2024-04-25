@@ -60,11 +60,10 @@ public class HiddenActivity extends AppCompatActivity {
                     score++;
                     Toast.makeText(HiddenActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(HiddenActivity.this, "Incorrect.", Toast.LENGTH_SHORT).show();
+                    txtWord.setText(imageNames[currentImageIndex]);
                 }
                 txtScore.setText("Score: " + score);
-                btnSubmit.setEnabled(false); // disable the button after one guess
-            }
+                btnSubmit.setEnabled(false);             }
         });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
